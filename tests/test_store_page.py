@@ -3,7 +3,7 @@
 from utils.config import Config
 from playwright.sync_api import Page, expect
 
-# тестируем добавление телефона в корзину
+# тестируем добавление товара в корзину
 def test_store_add_to_cart(login_store):
     login_store.get_by_role("link", name="Phones", exact=True).click()
     login_store.get_by_role("link", name="Sony xperia z5", exact=True).click()
